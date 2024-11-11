@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::selection {
+    background-color: #f2d3c1;
+    color: white;
+}
+.banner_slider{
+    animation: slider 20s linear infinite;
+}
+.banner_slider:hover{
+    animation-play-state: paused;
+}
+@keyframes slider{
+    0%{transform:translateX(0%);}
+    100%{transform:translateX(-100%);}
+}
